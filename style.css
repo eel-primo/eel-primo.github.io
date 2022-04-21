@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+body {
+  padding: 40px;
+  background-color: #121212;
+}
+
+.typeanim_1 {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+}
+
+/* Animation */
+.typeanim_1 {
+  animation: animated-text 1s steps(9, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 152px;
+  }
+}
+/* cursor animations */
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.showafter {
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.showafter {
+  animation: fade-in 3s steps(256, end) 3s 1 normal both;
+}
+
+@keyframes fade-in {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
