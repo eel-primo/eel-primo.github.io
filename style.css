@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+/*Body style*/
 body {
   padding: 40px;
   background-color: #121212;
 }
 
-.typeanim_1 {
+/*Title style*/
+.typeanim-1 {
   border-right: solid 3px rgba(0, 255, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
@@ -14,12 +16,11 @@ body {
   margin: 0 auto;
 }
 
-/* Animation */
-.typeanim_1 {
+/* Typing animation */
+.typeanim-1 {
   animation: animated-text 1s steps(9, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
 }
 
-/* text animation */
 @keyframes animated-text {
   from {
     width: 0;
@@ -28,7 +29,8 @@ body {
     width: 152px;
   }
 }
-/* cursor animations */
+
+/* cursor blink */
 @keyframes animated-cursor {
   from {
     border-right-color: rgba(0, 255, 0, 0.75);
@@ -37,15 +39,21 @@ body {
     border-right-color: transparent;
   }
 }
+
+/* Show after title animation*/
 .showafter {
-  white-space: nowrap;
-  hyphens: auto;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal; 
+  line-break: auto;
+  hyphens: manual; 
+  width: 40%;
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 1rem;
 }
 
 .showafter {
@@ -55,8 +63,10 @@ body {
 @keyframes fade-in {
   from {
     color: transparent;
+    opacity: 0;
   }
   to {
     color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
   }
 }
