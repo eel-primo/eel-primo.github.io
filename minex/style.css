@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+body{
+  padding: 40px;
+  background-color: #121212;
+}
+p{
+  color: #ffffff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 36px;
+}
+.subtitle{
+  font-size: 14px;
+  paddinf-top: -51px;
+  animation: fade-in 1s steps(256, end) 3s 1 normal both;
+}
+/*Разделитель*/
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background: #161616;
+}
+
+.separator-text {
+  margin: 0 10px;
+}
+
+/* Кнопки меню*/
+.user-session{
+  padding: 30px;
+  margin: 0 auto; 
+  font-size: 14px;
+}
+
+/*Анимации*/
+@keyframes fade-in {
+  from {
+    color: transparent;
+    opacity: 0;
+  }
+  to {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+  }
+}
