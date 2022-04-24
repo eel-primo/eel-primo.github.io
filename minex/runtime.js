@@ -11,8 +11,8 @@ subtitle.innerHTML = "Работает на " + cool_subtitle_num.toString().rep
  }, 2333);
 
 // Get session cookie
-var session = getCookie('session')
-var e = document.getElementById("session");
-e.innerHTML = session;
+//var session = getCookie('session')
+//var e = document.getElementById("session");
+//e.innerHTML = session;
 
      
