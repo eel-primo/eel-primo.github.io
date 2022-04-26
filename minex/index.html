@@ -1,7 +1,16 @@
 <html lang="ru">
   <head>
     <title>MineX - Standalone</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!-- Redirect to mobile version if screen is smol -->
+    <script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() < 900){
+            window.location = "https://www.eel-primo.github.io/minex/mobile"
+        }
+    });
+    </script>
    
   </head>
   <body>
