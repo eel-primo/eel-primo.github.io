@@ -5,6 +5,6 @@ xmlHttp.send( null );
 
 // Get the element and change the text to the query result
 let lorem = document.getElementById("lorem");
-lorem.innerHTML = xmlHttp.responseText;
+lorem.innerHTML = xmlHttp.responseText + "  - (c) eel-primo, 2022";
 
 // That's all code!
